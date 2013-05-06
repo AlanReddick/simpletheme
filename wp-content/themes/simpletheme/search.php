@@ -22,8 +22,8 @@ $search = new WP_Query($search_query);
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage simpletheme
- * @since simpletheme v1.0
+ * @subpackage simpletheme2013
+ * @since simpletheme2013 v1.0
  */
 
 get_header(); ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 		<?php if( $post->post_type == 'post' ) { ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'simpletheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $title); ?>
+				<a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'simpletheme2013'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $title); ?>
 				<?php echo $title; ?></a>
 			</h1>
 			<?php if(!is_page()) { ?>
@@ -48,17 +48,17 @@ get_header(); ?>
 			<?php } ?>
 			<div class="entry-content">
 				<?php the_excerpt('Read more...'); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'simpletheme' ), 'after' => '</div>' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'simpletheme' ), '<div class="edit-link"><p>', '</p></div>' ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'simpletheme2013' ), 'after' => '</div>' ) ); ?>
+				<?php edit_post_link( __( 'Edit', 'simpletheme2013' ), '<div class="edit-link"><p>', '</p></div>' ); ?>
 			</div>
 			<!-- .entry-summary -->
 			
 			<div class="entry-utility">
 				<p><span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">
-					<?php _e( 'Posted in ', 'simpletheme' ); ?>
+					<?php _e( 'Posted in ', 'simpletheme2013' ); ?>
 					</span><?php echo get_the_category_list(', '); ?></span>
-					<?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'simpletheme' ) . '</span>', ", ", "</span>\n\t\t\t\t\t\t\n" ) ?>
-					<?php edit_post_link( __( 'Edit', 'simpletheme' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
+					<?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'simpletheme2013' ) . '</span>', ", ", "</span>\n\t\t\t\t\t\t\n" ) ?>
+					<?php edit_post_link( __( 'Edit', 'simpletheme2013' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
 				</p>
 			</div>
 			<!-- #entry-utility --> 
@@ -67,19 +67,19 @@ get_header(); ?>
 		<?php 
 			} elseif ($post->post_type == 'page') { ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'simpletheme'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'simpletheme2013'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 				<?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">\0</strong>', $title); ?>
 				<?php echo $title; ?>
 				</a></h1>
 			<div class="entry-summary noimages">
 				<?php the_excerpt('Read more...'); ?>
-				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'simpletheme' ) . '&after=</div>') ?>
+				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'simpletheme2013' ) . '&after=</div>') ?>
 			</div>
 			<!-- .entry-summary -->
 			
 			<div class="entry-utility">
 				<p>
-					<?php edit_post_link( __( 'Edit', 'simpletheme' ), "<span class=\"meta-sep\"></span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
+					<?php edit_post_link( __( 'Edit', 'simpletheme2013' ), "<span class=\"meta-sep\"></span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
 				</p>
 			</div>
 			<!-- #entry-utility --> 
@@ -112,11 +112,11 @@ get_header(); ?>
 		<?php else : ?>
 		<div id="post-0" class="post no-results not-found">
 			<h2 class="entry-title">
-				<?php _e( 'Nothing Found', 'simpletheme' ) ?>
+				<?php _e( 'Nothing Found', 'simpletheme2013' ) ?>
 			</h2>
 			<div class="entry-content">
 				<p>
-					<?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'simpletheme' ); ?>
+					<?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'simpletheme2013' ); ?>
 				</p>
 				<?php get_search_form(); ?>
 			</div>

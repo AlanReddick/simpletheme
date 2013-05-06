@@ -17,7 +17,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo sprintf( __( 'Page %s', 'simpletheme' ), max( $paged, $page ) . ' &raquo; ' );
+		echo sprintf( __( 'Page %s', 'simpletheme2013' ), max( $paged, $page ) . ' &raquo; ' );
 	
 	// Add the blog name.
 	wp_title( '&raquo;', true, 'right' );

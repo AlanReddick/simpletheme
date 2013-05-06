@@ -9,8 +9,8 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage simpletheme
- * @since simpletheme v1.0
+ * @subpackage simpletheme2013
+ * @since simpletheme2013 v1.0
  */
 
 get_header(); ?>
@@ -29,8 +29,8 @@ get_header(); ?>
 			<?php } ?>
 			<div class="entry-content">
 				<?php the_content('Read more...'); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'simpletheme' ), 'after' => '</div>' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'simpletheme' ), '<div class="edit-link"><p>', '</p></div>' ); ?>
+				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'simpletheme2013' ), 'after' => '</div>' ) ); ?>
+				<?php edit_post_link( __( 'Edit', 'simpletheme2013' ), '<div class="edit-link"><p>', '</p></div>' ); ?>
 			</div>
 			<!-- .entry-content --> 
 		</div>
