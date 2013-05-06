@@ -1,0 +1,89 @@
+/*
+Theme Name: Simple Theme
+Theme URI: http://reddickdesign.com.au/
+Description: The Simple Theme
+Author: Alan Reddick
+Version: 1.0
+*/
+
+body {
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+#outer {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	height: 100px;
+}
+#navigation {
+	height: 34px;
+}
+#main {
+}
+#main:after {
+	content: ".";
+	height: 0px;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+#content {
+	width: 580px;
+	float: left;
+}
+#sidebar {
+	height: 300px;
+	width: 290px;
+	float: left;
+}
+#footer {
+	height: 100px;
+	clear: both;
+}
+.hidetext {
+	display: none;
+}
+.search-excerpt {
+	background-color: #FC0;
+}
+.errorsearch {
+	border: solid 1px #900;
+}
+.alignleft { 
+	float: left;
+}
+.alignright { 
+	float: right;
+}
+/* Remove the styles below to get rid of any styling */
+div {
+	background-color:#CCC;
+}
+p, li {
+	font-size: 135%;
+}
+li li {
+	font-size: 100%;
+}
+#outer {
+	padding:10px;
+	background-color: #EEEEEE;
+}
+#header {
+	margin-bottom: 10px;
+}
+#navigation {
+	margin-bottom: 10px;
+}
+#main {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #DDDDDD;
+}
+#content {
+	margin-right: 10px;
+}
