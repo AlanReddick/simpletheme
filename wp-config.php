@@ -19,7 +19,7 @@
 define('DB_NAME', 'wordpresstheme');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'rooting');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'Akcidder9');
